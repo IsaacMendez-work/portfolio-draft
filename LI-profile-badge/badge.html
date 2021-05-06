@@ -7,19 +7,58 @@
     <title>LinkedIn Badges</title>
 </head>
 <body>
-    <!-- Recreating LinkedIn profile badges without JavaScript so the LI-profile-badge can be used in GH's README.md files -->
-    <div align="center">
-        <img src="preferedbutton.png" width="150"> <br>
+<!-- Recreating LinkedIn profile badges without JavaScript so the LI-profile-badge can be used in GH's README.md files -->
 
-        <img src="roundlight.png" width="265"> <br>
-        <img src="squarelight.png" width="275"> <br>
 
-        <img src="rounddark.png" width="275"> <br>
-        <img src="squaredark.png" width="275"> <br>
-    </div>
+    <!-- This is the button I'd rather use on these -->
+    <img src="preferedbutton.png" width="150px"> <br>
+    
+    
+    <!-- This is the first profile badge I'm trying to recreate -->
+    <img src="roundlight.png" width="275px"> 
 
-    <!-- This will be the  attempt to recreate the LinkedIn profile badge from https://www.linkedin.com/badges/profile/create?vanityname=USERNAMEHERE using only HTML (and maybe markdown) -->
-    <div>
+    <!-- +++++++BEGIN FIRST IMITATION+++++++ -->
+
+    <!-- This imitation will use only HTML (and CSS in the <style> tags) -->
+    <div style="background-color: rgb(245, 245, 245); width: 255px; margin:3px; border: 0px solid rgb(245, 245, 245); box-shadow: 0px 0px 4px rgb(60, 60, 60); border-radius: 8px; overflow: hidden;">
+
+            
+        <!-- +++++++BEGIN HEADER+++++++ -->
+        <!-- This header will have the profile photo overlapping the background photo -->
+        <div style="position: relative;">
+            <!-- I went to my LinkedIn profile, right clicked my background photo, and selected Copy Image Link, then I pasted it below -->
+            <img src="https://media-exp1.licdn.com/dms/image/C4E16AQEWnZ_8ELEcjA/profile-displaybackgroundimage-shrink_350_1400/0/1619734235751?e=1625702400&v=beta&t=fKV3cs9lb5JDhCQIXWqJ3agPkF5YLFg91s3wPLBt4Wo" style="width: 100%; position: relative; z-index: 1;" />
+            <!-- Still from my profile, I right clicked the profile photo and did the same thing for this image -->
+            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEugjV8AKMHZQ/profile-displayphoto-shrink_400_400/0/1620154152552?e=1625702400&v=beta&t=L38gAQ1XNYPL5w_hfRNXlp9K0oTdH7nj6xWR5u7CgKc" style="width: 32%; position: relative; z-index: 2; top: -49px; border: 2.68px solid rgb(245, 245, 245); border-radius: 50%; display: block; margin: auto;" />
+        </div>
+        <!-- +++++++END HEADER+++++++ -->
+
+        <!-- Below, I will be adding the name, title, and alma mater -->
+        <!-- +++++++BEGIN TEXT+++++++ -->
+        <div>
+            <p style="color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; position: relative; text-align: center; top: -40px;"><a href="https://www.linkedin.com/in/IsaacMendez-work/" style="color: inherit; text-decoration: inherit; font-weight: 600; font-size: 18px;">Isaac Mendez (he/him)</a></p>
+            
+            <p style="color: rgb(150, 150, 150); font-size: 14px; width: 80%; margin: auto; text-align: center; position: relative; top: -45px;">Product Manager-in-training with <a href="https://www.linkedin.com/company/us-bank/" style="color: inherit; text-decoration: inherit;">U.S. BANK</a></p>
+            <p style="color: rgb(150, 150, 150); font-size: 14px; width: 80%; margin: auto; text-align: center; position: relative; top: -40px;"><a href="https://www.linkedin.com/school/mars-hill-university/" style="color: inherit; text-decoration: inherit;">Mars Hill University</a></p>
+        </div>
+        <!-- +++++++END TEXT+++++++ -->     
+
+        <!-- +++++++BEGIN BUTTON+++++++ -->
+        <div style="color: rgb(22, 102, 197); font-family: Helvetica, Arial, sans-serif; text-align: center;">
+            <p style="padding: 4px 8px; border: 1.7px solid rgb(22, 102, 197); border-radius: 15px; font-size: 12px; font-weight: 600; width: 50%; margin: auto; position: relative; top: -18px;">
+                <a href="https://www.linkedin.com/in/IsaacMendez-work/" style="color: inherit; text-decoration: inherit;">View LinkedIn Profile</a>
+            </p>
+        </div>
+        <!-- +++++++END BUTTON+++++++ -->
+
     </div> 
+    <!-- +++++++END FIRST IMITATION+++++++ -->
+
+    <img src="squarelight.png" width="275px"> <br>
+
+    <img src="rounddark.png" width="275px"> <br>
+
+
+    <img src="squaredark.png" width="275px"> <br>    
 </body>
 </html>
